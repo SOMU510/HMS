@@ -11,7 +11,7 @@ const iconMap = {
   'People': 'bi-people',
   'Settings': 'bi-gear',
   'Home': 'bi-house-door',
-  'Apartment': 'bi-building',
+  'Apartmentgfg': 'bi-building',
   'Business': 'bi-briefcase',
   'AccountBox': 'bi-person-badge',
   'MeetingRoom': 'bi-door-open',
