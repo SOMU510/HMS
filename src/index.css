@@ -1,0 +1,189 @@
+/* Import Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/* Root Variables - NiceAdmin Color Scheme */
+:root {
+  --primary-color: #4154f1;
+  --secondary-color: #012970;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --dark-color: #212529;
+  --light-color: #f6f9ff;
+  --sidebar-bg: #fff;
+  --sidebar-hover: #f6f9ff;
+  --topbar-bg: #fff;
+  --card-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  --font-primary: 'Nunito', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: #444444;
+  background-color: #f6f9ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #ebeef4;
+  padding: 15px 20px;
+}
+
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-family: var(--font-secondary);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Button Styles */
+.btn {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 10px 24px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #5969f3;
+  border-color: #5969f3;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+  border-color: #dee2e6;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(65, 84, 241, 0.25);
+}
+
+.form-label {
+  margin-bottom: 5px;
+  color: #444444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Table Styles */
+.table {
+  color: #444444;
+}
+
+.table thead th {
+  background-color: #f6f9ff;
+  color: var(--secondary-color);
+  font-weight: 700;
+  border-bottom: 2px solid #dee2e6;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f6f9ff;
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(1, 41, 112, 0.075) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
